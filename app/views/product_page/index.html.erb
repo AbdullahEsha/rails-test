@@ -1,0 +1,24 @@
+<div class="container mx-auto px-4 py-8">
+  <nav>
+    <ul>
+      <li><%= link_to "English", url_for(locale: :en) %></li>
+      <li><%= link_to "Español", url_for(locale: :es) %></li>
+    </ul>
+  </nav>
+  <h1 class="text-3xl font-bold mb-6"><%= t('productpage.title') %></h1>
+  
+  <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+    <% @products.each do |product| %>
+      <div class="bg-white p-6 rounded-lg shadow-md">
+        <h2 class="text-xl font-semibold mb-4"><%= product.name %></h2>
+        <p class="text-gray-700 mb-4"><%= truncate(product.description, length: 150) %></p>
+        <p class="text-gray-600 mb-4"><%= number_to_currency(product.price) %></p>
+        <%= link_to t('home_page.cta'), root_path, class: 'bg-blue-500 text-white px-6 py-3 rounded-full inline-block hover:bg-blue-600 transition-colors duration-300' %>
+      </div>
+    <% end %>
+  </div>
+</div>
+
+<%= render partial: 'components/product_details', locals: { product: @product } if defined?(@product) %>
+<%= render partial: 'components/related_products', locals: { products: @related_products } if defined?(@related_products) %>
+<%= render partial: 'components/customer_reviews', locals: { reviews: @reviews } if defined?(@reviews) %>

@@ -1,0 +1,17 @@
+es:
+  hello: "Hola mundo"
+  home:
+    error: "Ocurrió un error"
+    promotion:
+      title: "Bienvenido a nuestro sitio"
+      description: "Tenemos muchos productos geniales para ti"
+      cta: "Ver todos los productos"
+    hero:
+      title: "Bienvenido a nuestro sitio"
+      description: "Tenemos muchos productos geniales para ti"
+    featured:
+      title: "Productos destacados"
+      promotion:
+        cta: "Ver todos los productos"
+  home_page:
+    cta: "Ver todos los productos"

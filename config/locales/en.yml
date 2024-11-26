@@ -1,0 +1,17 @@
+en:
+  hello: "Hello world"
+  home:
+    error: "An error occurred"
+    promotion:
+      title: "Welcome to our site"
+      description: "We have a lot of great products for you"
+      cta: "View all products"
+    hero:
+      title: "Welcome to our site"
+      description: "We have a lot of great products for you"
+    featured:
+      title: "Featured products"
+      promotion:
+        cta: "View all products"
+  home_page:
+    cta: "View all products"
