@@ -76,3 +76,5 @@ gem 'dotenv-rails', groups: [:development, :test]
 
 # Paranoia
 gem 'paranoia'
+
+gem "bundler", "~> 2.5"
